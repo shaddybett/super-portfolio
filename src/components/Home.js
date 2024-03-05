@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home() {
   return ( 
-    <div className="body">
+    <div>
       <Navbar fluid rounded className="navbar">
         <span className="self-center whitespace-nowrap text-xl font-bold text-white">BETT</span>
         <Navbar.Toggle />
@@ -39,7 +39,7 @@ function Home() {
         <div href="about" className="max-w-sm ml-20">
             <img src="/home/shadrack/Pictures/IMG_20230918_005447_821.jpg" alt="Bett's image"/>
         </div>
-      </div>
+      </div> 
     </div>  
   );
 }
