@@ -1,12 +1,22 @@
-.text{
-    background-color: red;
-    max-width: 50%;
-}
-.image{
-    background-color: aqua;
-    /* max-width: 50%; */
-    margin-left: 100px;
-}
+
 .cards{
     display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+    color: white;
+    /* background-color: aqua; */
+
 }
+.block{
+    /* background-color: aqua; */
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: rgb(33, 33, 75);
+}
+
+.body{
+    background-color: rgb(15, 15, 48);
+}  
+  

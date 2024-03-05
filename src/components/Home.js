@@ -1,57 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "flowbite-react";
-import { Card } from "flowbite-react";
-import { Blockquote } from "flowbite-react";
 import "./Home.css";
 
 function Home() {
-  return (
-    <Blockquote >
-      <svg
-        className="mb-4 h-8 w-8 text-gray-400 dark:text-gray-800"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 18 14"
-      />
-      <div className="flex justify-end bg-white-200">
-        <Navbar fluid rounded className="bg-white-200">
-          <Navbar.Toggle />
-          <Navbar.Collapse className="bg-white-200">
-            <Navbar.Link href="#" active>
-              Home
-            </Navbar.Link>
-            <Navbar.Link as={Link} href="#">
-              About
-            </Navbar.Link>
-            <Navbar.Link href="#">Services</Navbar.Link>
-            <Navbar.Link href="#">Pricing</Navbar.Link>
-            <Navbar.Link href="#">Contact</Navbar.Link>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
-      <div className="cards">
-        <Card href="#" className="max-w-sm">
+  return ( 
+    <div className="body">
+      <Navbar fluid rounded className="navbar">
+        <span className="self-center whitespace-nowrap text-xl font-bold text-white">BETT</span>
+        <Navbar.Toggle />
+        <Navbar.Collapse >
+          <Navbar.Link href="#" active style={{ color: 'white' }} className="links" onMouseEnter={(e) => e.target.style.color = '#6f42c1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            Home
+          </Navbar.Link>
+          <Navbar.Link as={Link} href="#" style={{ color: 'white' }} className="links" onMouseEnter={(e) => e.target.style.color = '#6f42c1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            About
+          </Navbar.Link>
+          <Navbar.Link href="#" style={{ color: 'white' }} className="links" onMouseEnter={(e) => e.target.style.color = '#6f42c1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            Services
+          </Navbar.Link>
+          <Navbar.Link href="#" style={{ color: 'white' }} className="links" onMouseEnter={(e) => e.target.style.color = '#6f42c1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            Pricing
+          </Navbar.Link>
+          <Navbar.Link href="#" style={{ color: 'white' }} className="links" onMouseEnter={(e) => e.target.style.color = '#6f42c1'} onMouseLeave={(e) => e.target.style.color = 'white'}>
+            Contact
+          </Navbar.Link>
+        </Navbar.Collapse>
+      </Navbar>
+      <div className="cards" id="about">
+        <div href="about" className="max-w-sm">
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
+            Hi, I'm Shadrack Bett,Web Developer
           </h5>
           <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            Passionate web developer equipped with a number of skills suiting both frontend and backend.
           </p>
-        </Card>
-        <Card href="#" className="max-w-sm">
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-          <p className="font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
-          </p>
-        </Card>
+        </div>
+        <div href="about" className="max-w-sm ml-20">
+            <img src="/home/shadrack/Pictures/IMG_20230918_005447_821.jpg" alt="Bett's image"/>
+        </div>
       </div>
-    </Blockquote>
+    </div>  
   );
 }
 
