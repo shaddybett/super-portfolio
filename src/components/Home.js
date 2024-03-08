@@ -142,7 +142,7 @@ const About = () => {
 const Skills = () => {
   return (
     <div>
-      <FontAwesomeIcon icon="fa-brands fa-js" />
+      <FontAwesomeIcon icon="js" />
     </div>
   );
 };
