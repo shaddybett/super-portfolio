@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
+
 import "./Home.css";
 
 const Nav = () => {
@@ -143,6 +144,7 @@ const Skills = () => {
   return (
     <div>
       <FontAwesomeIcon icon="js" />
+      javascript
     </div>
   );
 };
