@@ -276,15 +276,16 @@ const Contact = () => {
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
-          <Button gradientDuoTone="purpleToBlue" className="buttonc">
-            Send
+          <>
+          <Button gradientDuoTone="purpleToBlue" >
+            Download C.V
           </Button>
+          </>
+
         </div>
 
       </div>
-      <Button gradientDuoTone="purpleToBlue" className="buttonB">
-            Download C.V
-        </Button>
+
     </div>
   );
 };
