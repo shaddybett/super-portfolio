@@ -241,7 +241,6 @@ const ProjectCard = ({ title, description }) => {
     </div>
   );
 };
-
 const Contact = () => {
   return (
     <div className="contacts">
@@ -249,33 +248,33 @@ const Contact = () => {
         Contact Me
       </h5>
       <div className="contact-section">
-        <div className="contact-for">
-        <h5 className="text-xl font-medium text-white dark:text-white social">
-        I am social
-        </h5>
-        <div >
-          email
-          <p>shadrack.bett.92@gmail.com</p>
-        </div>
-        <div >
-          Phone
-          <p>0769465418</p>
-        </div>
-        <div >
-          <FontAwesomeIcon icon={faGithub} />
-          <span>Github</span>
-        </div>
-        <div >
-          <FontAwesomeIcon icon={faLinkedin} />
-          <span>Linkedin</span>
-        </div>
+        <div className="contact-details">
+          <h5 className="text-xl font-medium text-white dark:text-white">
+            I am social
+          </h5>
+          <div className="detail">
+            <FontAwesomeIcon icon={faGithub} />
+            <span>Github</span>
+          </div>
+          <div className="detail">
+            <FontAwesomeIcon icon={faLinkedin} />
+            <span>Linkedin</span>
+          </div>
+          <div className="detail">
+            <span>Email:</span>
+            <p>shadrack.bett.92@gmail.com</p>
+          </div>
+          <div className="detail">
+            <span>Phone:</span>
+            <p>0769465418</p>
+          </div>
         </div>
         <div className="contact-form">
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
           <Button gradientDuoTone="purpleToBlue" className="buttonc">
-            Download C.V
+            Send
           </Button>
         </div>
       </div>
