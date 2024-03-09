@@ -93,24 +93,47 @@ margin-top: 20px;
   font-size: 1rem;
   color: #666; /* Adjust text color */
 }
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.contacts {
+  background-color: #22364d;
+  padding: 20px;
+}
+
 .contact-section {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
   display: flex;
   gap: 20px;
 }
 
+.contact-details,
 .contact-form {
-  /* background-color: #969ae7; */
+  background-color: #a9b0b8;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  /* margin-top: 20px; */
+}
+
+.contact-details .detail,
+.contact-details .detail span,
+.contact-details .detail p {
+  margin-bottom: 10px;
+}
+
+.contact-details .detail span {
+  margin-right: 10px;
+  
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 50%;
+  width: 100%;
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -119,10 +142,10 @@ margin-top: 20px;
 
 .contact-form button {
   display: block;
-  width: 50%;
+  width: 100%;
   padding: 10px;
   background-color: #007bff;
-  color: white;
+  color: rgb(110, 125, 148);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -131,23 +154,26 @@ margin-top: 20px;
 .contact-form button:hover {
   background-color: #0056b3;
 }
-.contact{
-  display: flex;
-  justify-content: center;
-  
-}
-.contacts{
-  background-color: #22364d;
-}
-.buttonc{
-  max-width: 200px;
-  max-height: 50px;
-}
-.contact-for{
-  background-color: rgb(68, 123, 172);
-  max-width: 50%;
-  
+
+@media (min-width: 768px) {
+  .contact-details {
+    max-width: 50%;
+  }
 }
 .details{
-  display: grid;
+  display: flex;
+  gap: 5px;
+  color: white;
+  margin-top: 50px;
+
+  
+}
+.buttonc{
+  max-width: fit-content;
+  max-height: 100px;
+  margin-left: 150px;
+}
+.icon{
+  font-size: 24px; /* Adjust the size of the icons as needed */
+  margin-right: 10px;
 }

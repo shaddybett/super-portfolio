@@ -19,7 +19,7 @@ import {
   faSquareGit,
   faNodeJs,
   faJira,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./Home.css";
@@ -244,29 +244,32 @@ const ProjectCard = ({ title, description }) => {
 const Contact = () => {
   return (
     <div className="contacts">
-      <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20 contact">
+      <h5 className="text-2xl font-semibold text-white dark:text-white mt-20  contact">
         Contact Me
       </h5>
       <div className="contact-section">
         <div className="contact-details">
           <h5 className="text-xl font-medium text-white dark:text-white">
-            I am social
+            I am social get in touch!
           </h5>
+
           <div className="detail">
-            <FontAwesomeIcon icon={faGithub} />
+            <span className="text-xl text-white">Email:</span>
+            <p className="text-l text-white">shadrack.bett.92@gmail.com</p>
+          </div>
+          <div className="detail ">
+            <span className="text-xl text-white">Phone:</span>
+            <p className=" text-white">+254 769 465 418</p>
+          </div>
+          <div className="details">
+            <>
+            <FontAwesomeIcon icon={faGithub} className="icon"/>
             <span>Github</span>
-          </div>
-          <div className="detail">
-            <FontAwesomeIcon icon={faLinkedin} />
+            </>
+            <>
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
             <span>Linkedin</span>
-          </div>
-          <div className="detail">
-            <span>Email:</span>
-            <p>shadrack.bett.92@gmail.com</p>
-          </div>
-          <div className="detail">
-            <span>Phone:</span>
-            <p>0769465418</p>
+            </>
           </div>
         </div>
         <div className="contact-form">
@@ -277,7 +280,11 @@ const Contact = () => {
             Send
           </Button>
         </div>
+
       </div>
+      <Button gradientDuoTone="purpleToBlue" className="buttonB">
+            Download C.V
+        </Button>
     </div>
   );
 };
