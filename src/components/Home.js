@@ -7,6 +7,8 @@ import { Button } from "flowbite-react";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
+
 import "./Home.css";
 
 const Nav = () => {
@@ -141,7 +143,9 @@ const About = () => {
 const Skills = () => {
   return (
     <div>
-      <FontAwesomeIcon icon={['fab', 'python']} />
+      <FontAwesomeIcon icon="python" />
+
+      python
     </div>
   );
 };
