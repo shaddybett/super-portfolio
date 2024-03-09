@@ -241,12 +241,22 @@ const ProjectCard = ({ title, description }) => {
   );
 };
 
+
+
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-section">
       <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
-        Contact me
+        Contact Me
       </h5>
+      <div className="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+      </div>
     </div>
   );
 };
+
+
