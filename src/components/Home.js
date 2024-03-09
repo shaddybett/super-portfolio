@@ -205,7 +205,7 @@ const About = () => {
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects h-screen">
       <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
         My Projects
       </h5>
@@ -225,7 +225,7 @@ const Projects = () => {
           title="Project 2"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ullamcorper ex."
         />
-        {/* Add more project cards here */}
+        
       </div>
     </div>
   );
@@ -240,3 +240,6 @@ const ProjectCard = ({ title, description }) => {
     </div>
   );
 };
+
+
+const 
