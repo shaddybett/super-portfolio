@@ -19,6 +19,7 @@ import {
   faSquareGit,
   faNodeJs,
   faJira,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./Home.css";
@@ -241,22 +242,43 @@ const ProjectCard = ({ title, description }) => {
   );
 };
 
-
-
 const Contact = () => {
   return (
-    <div className="contact-section">
-      <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
+    <div className="contacts">
+      <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20 contact">
         Contact Me
       </h5>
-      <div className="contact-form">
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
-        <button>Send Message</button>
+      <div className="contact-section">
+        <div className="contact-for">
+        <h5 className="text-xl font-medium text-white dark:text-white social">
+        I am social
+        </h5>
+        <div >
+          email
+          <p>shadrack.bett.92@gmail.com</p>
+        </div>
+        <div >
+          Phone
+          <p>0769465418</p>
+        </div>
+        <div >
+          <FontAwesomeIcon icon={faGithub} />
+          <span>Github</span>
+        </div>
+        <div >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span>Linkedin</span>
+        </div>
+        </div>
+        <div className="contact-form">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <Button gradientDuoTone="purpleToBlue" className="buttonc">
+            Download C.V
+          </Button>
+        </div>
       </div>
     </div>
   );
 };
-
-
