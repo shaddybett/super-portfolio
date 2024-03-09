@@ -123,6 +123,7 @@ const Home = () => {
       </div>
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 };
@@ -225,7 +226,6 @@ const Projects = () => {
           title="Project 2"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ullamcorper ex."
         />
-        
       </div>
     </div>
   );
@@ -241,5 +241,12 @@ const ProjectCard = ({ title, description }) => {
   );
 };
 
-
-const 
+const Contact = () => {
+  return (
+    <div>
+      <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
+        Contact me
+      </h5>
+    </div>
+  );
+};
