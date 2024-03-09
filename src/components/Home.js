@@ -32,15 +32,22 @@ const Nav = () => {
       </span>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <div className="details">
-          <>
+        <div className="text-white">
+          <a
+            href="https://github.com/shaddybett"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} className="icon" />
-            <span>Github</span>
-          </>
-          <>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shadrack-bett-a8072728b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4"
+          >
             <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <span>Linkedin</span>
-          </>
+          </a>
         </div>
         <Link to="/">
           <Navbar.Link
@@ -114,10 +121,10 @@ const Home = () => {
         </div>
         <div href="about" className="max-w-sm ml-40 card">
           <h5 className="text-4xl font-semi-bold  text-rgb(90, 90, 163) dark:text-rgb(90, 90, 163) ">
-            Hi, I'm Shadrack Bett.
+            Hi, I'm Shadrack Bett
           </h5>
           <h5 className="text-2xl font-semi-bold tracking-tight text-white dark:text-white mb-2">
-            Full Stack software Developer.
+            Full-Stack software Developer
           </h5>
           <p className="font-normal text-white dark:text-gray-400 mt-2">
             Specialized in both front-end and back-end, i build exceptional and
