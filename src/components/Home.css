@@ -3,8 +3,9 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 100px;
+    /* margin-top: 100vh; */
     color: rgb(213, 213, 245);
+    
     
 }
 .block{
@@ -13,6 +14,10 @@
 }
 .navbar{
     background-color: rgb(33, 33, 75);
+    
+}
+#home {
+  min-height: fit-content;
 }
 
 .body{
@@ -24,7 +29,7 @@
     /* background-color: aliceblue; */
     display: flex;
     background-color: rgb(34, 34, 82);
-    margin-top: 140px;
+    margin-top: 180px;
     text-align: center;
 }
   
@@ -138,8 +143,9 @@ margin-top: 20px;
   width: 100%;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #65858d;
   border-radius: 4px;
+  background-color: #f2f4f7;
 }
 
 .contact-form button {
@@ -178,6 +184,8 @@ margin-top: 20px;
 .icon{
   font-size: 24px; /* Adjust the size of the icons as needed */
   margin-right: 10px;
+  color: #fff; /* Set the default color */
+  transition: color 0.3s;
 }
 .footer {
   background-color: #2f3136;
@@ -193,6 +201,6 @@ margin-top: 20px;
   margin: 0 auto;
   text-align: center;
 }
-icon:hover{
-  background-color: purple;
+.icon:hover{
+  color: rgb(52, 54, 163);
 }

@@ -25,8 +25,13 @@ import {
 import "./Home.css";
 
 const Nav = () => {
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
   return (
-    <Navbar fluid rounded className="navbar">
+    <Navbar fluid rounded className="navbar" style={{ position: "fixed", top: 0, width: "100%", zIndex: 1000 }}>
       <span className="self-center whitespace-nowrap text-xl font-bold text-white">
         BETT
       </span>
@@ -49,7 +54,7 @@ const Nav = () => {
             <FontAwesomeIcon icon={faLinkedin} className="icon" />
           </a>
         </div>
-        <Link to="/">
+        <Link to="/" onClick={(e)=> handleClick(e, "home")}>
           <Navbar.Link
             style={{ color: "white" }}
             className="links"
@@ -59,7 +64,7 @@ const Nav = () => {
             Home
           </Navbar.Link>
         </Link>
-        <Link to="/About">
+        <Link to="/about" onClick={(e) => handleClick(e, "about")}>
           <Navbar.Link
             style={{ color: "white" }}
             className="links"
@@ -69,17 +74,7 @@ const Nav = () => {
             About
           </Navbar.Link>
         </Link>
-        <Link to="/skills">
-          <Navbar.Link
-            style={{ color: "white" }}
-            className="links"
-            onMouseEnter={(e) => (e.target.style.color = "#6f42c1")}
-            onMouseLeave={(e) => (e.target.style.color = "white")}
-          >
-            Skills
-          </Navbar.Link>
-        </Link>
-        <Link to="/projects">
+        <Link to="/projects" onClick={(e) => handleClick(e, "projects")}>
           <Navbar.Link
             style={{ color: "white" }}
             className="links"
@@ -90,7 +85,7 @@ const Nav = () => {
           </Navbar.Link>
         </Link>
 
-        <Link to="/contact">
+        <Link to="/contact" onClick={(e) => handleClick(e, "contact")}>
           <Navbar.Link
             style={{ color: "white" }}
             className="links"
@@ -107,11 +102,10 @@ const Nav = () => {
 
 const Home = () => {
   return (
-    <div
+    <div id="home"
       className="bg-black-200 "
-      style={{ backgroundColor: "rgb(21, 21, 48)", minHeight: "100vh" }}
+      style={{ backgroundColor: "rgb(21, 21, 48)", maxHeight: "100%" }}
     >
-      <Nav />
       <div className="cards" id="about">
         <div href="about" className="max-w-sm ">
           <img
@@ -120,7 +114,7 @@ const Home = () => {
           />
         </div>
         <div href="about" className="max-w-sm ml-40 card">
-          <h5 className="text-4xl font-semi-bold  text-rgb(90, 90, 163) dark:text-rgb(90, 90, 163) ">
+          <h5 className="text-4xl font-semi-bold  text-rgb(90, 90, 163) dark:text-rgb(90, 90, 163) mt-20">
             Hi, I'm Shadrack Bett
           </h5>
           <h5 className="text-2xl font-semi-bold tracking-tight text-white dark:text-white mb-2">
@@ -139,6 +133,7 @@ const Home = () => {
           </Button>
         </Link>
       </div>
+      <Nav/>
       <About />
       <Projects />
       <Contact />
@@ -150,7 +145,7 @@ export default Home;
 
 const About = () => {
   return (
-    <div className="flex flex-col  items-center  h-screen about ">
+    <div className="flex flex-col  items-center  h-screen about " id="about">
       <h5 className="text-2xl font-semibold  text-white dark:text-white mb-2 mt-20 ">
         About Me
       </h5>
@@ -225,7 +220,7 @@ const About = () => {
 
 const Projects = () => {
   return (
-    <div className="projects h-screen">
+    <div className="projects h-screen" id="projects">
       <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
         My Projects
       </h5>
@@ -261,7 +256,7 @@ const ProjectCard = ({ title, description }) => {
 };
 const Contact = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id="contact">
       <h5 className="text-2xl font-semibold text-white dark:text-white mt-10  contact">
         Contact Me
       </h5>
@@ -279,16 +274,23 @@ const Contact = () => {
             <span className="text-xl text-white">Phone:</span>
             <p className=" text-white">+254 769 465 418</p>
           </div>
-          <div className="details">
-            <>
-              <FontAwesomeIcon icon={faGithub} className="icon" />
-              <span>Github</span>
-            </>
-            <>
-              <FontAwesomeIcon icon={faLinkedin} className="icon" />
-              <span>Linkedin</span>
-            </>
-          </div>
+          <div className="text-white mt-10">
+          <a
+            href="https://github.com/shaddybett"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} className="icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shadrack-bett-a8072728b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4"
+          >
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          </a>
+        </div>
         </div>
         <div className="contact-form">
           <input type="text" placeholder="Your Name" />
@@ -316,3 +318,8 @@ const Footer = () => {
     </footer>
   );
 };
+
+
+
+
+
