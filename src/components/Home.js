@@ -32,6 +32,16 @@ const Nav = () => {
       </span>
       <Navbar.Toggle />
       <Navbar.Collapse>
+        <div className="details">
+          <>
+            <FontAwesomeIcon icon={faGithub} className="icon" />
+            <span>Github</span>
+          </>
+          <>
+            <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            <span>Linkedin</span>
+          </>
+        </div>
         <Link to="/">
           <Navbar.Link
             style={{ color: "white" }}
@@ -125,7 +135,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
@@ -264,12 +274,12 @@ const Contact = () => {
           </div>
           <div className="details">
             <>
-            <FontAwesomeIcon icon={faGithub} className="icon"/>
-            <span>Github</span>
+              <FontAwesomeIcon icon={faGithub} className="icon" />
+              <span>Github</span>
             </>
             <>
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <span>Linkedin</span>
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+              <span>Linkedin</span>
             </>
           </div>
         </div>
@@ -278,25 +288,24 @@ const Contact = () => {
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
           <>
-          <Button gradientDuoTone="purpleToBlue" className="buttonc" >
-           <p className="text-xl font-medium text-white dark:text-white ml-3 mb-4">Send</p>
-          </Button>
+            <Button gradientDuoTone="purpleToBlue" className="buttonc">
+              <p className="text-xl font-medium text-white dark:text-white ml-3 mb-4">
+                Send
+              </p>
+            </Button>
           </>
-
         </div>
-
       </div>
-
     </div>
   );
 };
 
-const Footer = ()=> {
+const Footer = () => {
   return (
     <footer className="footer">
-    <div className="container">
-      <p>© 2024 Bett Shadrack. All rights reserved.</p>
-    </div>
-  </footer>
-  )
-}
+      <div className="container">
+        <p>© 2024 Bett Shadrack. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
