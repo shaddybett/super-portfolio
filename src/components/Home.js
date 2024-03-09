@@ -125,6 +125,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer/>
     </div>
   );
 };
@@ -244,7 +245,7 @@ const ProjectCard = ({ title, description }) => {
 const Contact = () => {
   return (
     <div className="contacts">
-      <h5 className="text-2xl font-semibold text-white dark:text-white mt-20  contact">
+      <h5 className="text-2xl font-semibold text-white dark:text-white mt-10  contact">
         Contact Me
       </h5>
       <div className="contact-section">
@@ -277,8 +278,8 @@ const Contact = () => {
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
           <>
-          <Button gradientDuoTone="purpleToBlue" >
-            Download C.V
+          <Button gradientDuoTone="purpleToBlue" className="buttonc" >
+           <p className="text-xl font-medium text-white dark:text-white ml-3 mb-4">Send</p>
           </Button>
           </>
 
@@ -289,3 +290,13 @@ const Contact = () => {
     </div>
   );
 };
+
+const Footer = ()=> {
+  return (
+    <footer className="footer">
+    <div className="container">
+      <p>© 2024 Bett Shadrack. All rights reserved.</p>
+    </div>
+  </footer>
+  )
+}
