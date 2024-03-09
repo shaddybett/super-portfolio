@@ -4,10 +4,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "flowbite-react";
 import { Button } from "flowbite-react";
-import "@fortawesome/fontawesome-free/css/all.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
+import "@fortawesome/fontawesome-free/css/all.css";
+import { faPython } from "@fortawesome/free-brands-svg-icons";
 
 import "./Home.css";
 
@@ -142,10 +141,9 @@ const About = () => {
 
 const Skills = () => {
   return (
-    <div>
-      <FontAwesomeIcon icon="python" />
-
-      python
+    <div className="skills">
+      <FontAwesomeIcon icon={faPython} />
+      github
     </div>
   );
 };

@@ -38,3 +38,7 @@ margin-top: 20px;
 .aboutext{
   max-width: 50%;
 }
+.skills{
+  max-height: fit-content;
+  justify-content: center;
+}
