@@ -6,7 +6,20 @@ import { Navbar } from "flowbite-react";
 import { Button } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { faPython } from "@fortawesome/free-brands-svg-icons";
+import {
+  faPython,
+  faJs,
+  faReact,
+  faHtml5,
+  faCss3,
+  faCodepen,
+  faGithub,
+  faWhmcs,
+  faThemeco,
+  faSquareGit,
+  faNodeJs,
+  faJira,
+} from "@fortawesome/free-brands-svg-icons";
 
 import "./Home.css";
 
@@ -109,7 +122,7 @@ const Home = () => {
         </Link>
       </div>
       <About />
-      <Skills />
+      <Projects />
     </div>
   );
 };
@@ -135,15 +148,95 @@ const About = () => {
       <h3 className="text-2xl font-medium  text-white dark:text-white mt-10">
         My Skills
       </h3>
+      <div className="skills-container">
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faJs} />
+          <span>JavaScript</span>
+        </div>
+
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faReact} />
+          <span>React</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faHtml5} />
+          <span>Html</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faCss3} />
+          <span>CSS</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faPython} />
+          <span>Python</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faCodepen} />
+          <span>Flask</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faWhmcs} />
+          <span>postgres</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faThemeco} />
+          <span>SQLite</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faNodeJs} />
+          <span>NodeJs</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faJira} />
+          <span>Jira</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faSquareGit} />
+          <span>Git</span>
+        </div>
+        <div className="skill-card">
+          <FontAwesomeIcon icon={faGithub} />
+          <span>Github</span>
+        </div>
+      </div>
     </div>
   );
 };
 
-const Skills = () => {
+const Projects = () => {
   return (
-    <div className="skills">
-      <FontAwesomeIcon icon={faPython} />
-      github
+    <div className="projects">
+      <h5 className="text-2xl font-semibold text-white dark:text-white mb-2 mt-20">
+        My Projects
+      </h5>
+      <h3 className="text-2xl font-medium text-white dark:text-white mb-4">
+        Real life projects I have been involved in
+      </h3>
+      <div className="project-cards">
+        <ProjectCard
+          title="Project 1"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ullamcorper ex."
+        />
+        <ProjectCard
+          title="Project 2"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ullamcorper ex."
+        />
+        <ProjectCard
+          title="Project 2"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ullamcorper ex."
+        />
+        {/* Add more project cards here */}
+      </div>
+    </div>
+  );
+};
+
+const ProjectCard = ({ title, description }) => {
+  return (
+    <div className="project-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      {/* Add more details or links to the project if needed */}
     </div>
   );
 };
