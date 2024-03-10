@@ -1,4 +1,3 @@
-//
 
 import React from "react";
 import { Link } from "react-router-dom";
@@ -109,7 +108,7 @@ const Home = () => {
       <div className="cards" id="about">
         <div href="about" className="max-w-sm ">
           <img
-            src="/home/shadrack/Pictures/IMG_20230918_005447_821.jpg"
+            src="https://miro.medium.com/v2/resize:fit:1200/1*C8rCYgM9TgxIHTOLwFtKjw.png"
             alt="Bett"
           />
         </div>
@@ -250,7 +249,7 @@ const ProjectCard = ({ title, description }) => {
     <div className="project-card">
       <h3>{title}</h3>
       <p>{description}</p>
-      {/* Add more details or links to the project if needed */}
+    
     </div>
   );
 };
@@ -318,6 +317,8 @@ const Footer = () => {
     </footer>
   );
 };
+
+
 
 
 
