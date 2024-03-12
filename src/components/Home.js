@@ -298,7 +298,7 @@ const Contact = () => {
           <>
             <Button gradientDuoTone="purpleToBlue" className="buttonc">
               <p className="text-xl font-medium text-white dark:text-white ml-3 mb-4">
-                Send 
+                Send message
               </p>
             </Button>
           </>
