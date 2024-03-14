@@ -262,7 +262,7 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-details">
           <h5 className="text-xl font-medium text-white dark:text-white">
-            I am social get in touch!
+            {/* I am social get in touch! */}
           </h5>
 
           <div className="detail">
