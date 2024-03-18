@@ -312,7 +312,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>© 2024 Bett Shadrack. All rights reserved.</p>
+        <p>© 2024 Bett Shadrack.</p>
       </div>
     </footer>
   );
