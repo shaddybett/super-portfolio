@@ -157,7 +157,7 @@ const About = () => {
         equipped with a number of skills suitable for bot front-end and back-end
         making me a full-stack developer soaring in the field of tech. I am
         currently looking forward to an intern position to apply my skills and
-        also to learn more from the experts {" "}
+        also to learn more from the experts in the field.{" "}
       </p>
       <h3 className="text-2xl font-medium  text-white dark:text-white mt-10">
         My Skills
